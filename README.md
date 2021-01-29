@@ -8,7 +8,7 @@ pip install choixpeau
 
 ## Usage
 
-```{python}
+```python
 from choixpeau import choixpeau
 
 redis_config = {
@@ -24,7 +24,7 @@ choixpeau = choixpeau.Choixpeau(
 
 ### get
 
-```{python}
+```python
 choixpeau.get("harrypotter")
 
 # if the key already exists
@@ -36,7 +36,7 @@ choixpeau.get("harrypotter")
 
 ### store
 
-```{python}
+```python
 choixpeau.store(
     "ab:poudlard:harrypotter", 
     { "ab_test_group": "gryffondor", "created_at": "2021-01-29" }
@@ -45,7 +45,7 @@ choixpeau.store(
 
 ## FastAPI
 
-```{python}
+```python
 from fastapi import FastAPI, Request, BackgroundTasks
 from choixpeau import choixpeau
 from choixpeau.decorators.fastapi import ab
