@@ -13,7 +13,7 @@ def dependencies():
 
 setuptools.setup(
     name="choixpeau",
-    version="0.0.2",
+    version="0.0.4",
     author="Keurcien Luu",
     author_email="keurcien@appchoose.io",
     description="Efficiently assign users to buckets.",
