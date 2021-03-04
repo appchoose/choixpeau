@@ -13,7 +13,7 @@ def dependencies():
 
 setuptools.setup(
     name="choixpeau",
-    version="0.0.4",
+    version="0.0.8",
     author="Keurcien Luu",
     author_email="keurcien@appchoose.io",
     description="Efficiently assign users to buckets.",
@@ -27,6 +27,6 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        'redis'
+        "redis"
     ]
 )
