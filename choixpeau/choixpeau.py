@@ -12,7 +12,7 @@ class Choixpeau:
         buckets=["A", "B"], 
         amplitude_api_key=None
     ):
-        self._r = redis.Redis(**redis_config, decode_responses=True)
+        self._r = redis.Redis(**redis_config, decode_responses=True, health_check_interval=10)
         self.ab_test_ids = ab_test_ids
         self.buckets = buckets
         
